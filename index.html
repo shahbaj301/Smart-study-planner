@@ -1,0 +1,381 @@
+# Smart Study Planner - Landing Page
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner - Boost Your Productivity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Smart Study</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#benefits" class="nav-link">Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link cta-btn">Smart Study Dashboard</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your Study Life with 
+                    <span class="gradient-text">Smart Planning</span>
+                </h1>
+                <p class="hero-description">
+                    Students often face challenges in organizing study schedules and tracking academic tasks. 
+                    Our Smart Study Planner helps you create, view, and manage study goals with reminders and 
+                    visual timelines to boost productivity and time management.
+                </p>
+                <div class="hero-buttons">
+                    <a href="dashboard.html" class="btn btn-primary pulse">
+                        <i class="fas fa-rocket"></i>
+                        Start Planning Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">% Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10000">0</span>
+                        <span class="stat-label">+ Students Helped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="24">0</span>
+                        <span class="stat-label">/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="mockup-container">
+                    <div class="device-mockup">
+                        <div class="screen">
+                            <div class="mockup-content">
+                                <div class="mockup-header">
+                                    <div class="mockup-nav">
+                                        <span class="nav-dot"></span>
+                                        <span class="nav-dot"></span>
+                                        <span class="nav-dot"></span>
+                                    </div>
+                                </div>
+                                <div class="mockup-dashboard">
+                                    <div class="dashboard-card">
+                                        <div class="card-header">Today's Tasks</div>
+                                        <div class="task-item completed">
+                                            <i class="fas fa-check"></i>
+                                            <span>Mathematics Assignment</span>
+                                        </div>
+                                        <div class="task-item pending">
+                                            <i class="fas fa-clock"></i>
+                                            <span>History Research</span>
+                                        </div>
+                                        <div class="task-item">
+                                            <i class="fas fa-book"></i>
+                                            <span>Science Lab Report</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-circle">
+                                        <div class="circle">
+                                            <div class="progress-text">75%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Smart Students</h2>
+                <p class="section-description">Everything you need to organize, track, and achieve your academic goals</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Task Management</h3>
+                    <p>Create, update, and delete study tasks with ease. Organize your assignments, projects, and daily goals efficiently.</p>
+                    <div class="feature-highlight">CRUD Operations</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Visual timelines and progress bars help you monitor your academic journey and stay motivated.</p>
+                    <div class="feature-highlight">Visual Analytics</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Reminders</h3>
+                    <p>Never miss a deadline with intelligent notification system that keeps you on track.</p>
+                    <div class="feature-highlight">Automated Alerts</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Study Calendar</h3>
+                    <p>Plan your study sessions, exams, and assignments with an intuitive calendar interface.</p>
+                    <div class="feature-highlight">Time Management</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Personal Profile</h3>
+                    <p>Customize your study experience with personal preferences, goals, and achievements.</p>
+                    <div class="feature-highlight">Personalization</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-save"></i>
+                    </div>
+                    <h3>Local Storage</h3>
+                    <p>Your data is saved securely in your browser - no internet required for basic functionality.</p>
+                    <div class="feature-highlight">Offline Ready</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Choose Smart Study Planner?</h2>
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h3>Boost Productivity by 300%</h3>
+                                <p>Organized planning leads to better focus and higher achievement rates in academic performance.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Save 5+ Hours Weekly</h3>
+                                <p>Efficient task management and automated reminders eliminate time wasted on poor organization.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h3>Achieve Better Grades</h3>
+                                <p>Students who use structured planning show significant improvement in academic performance.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h3>Reduce Study Stress</h3>
+                                <p>Clear organization and progress tracking help maintain a healthy study-life balance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="chart-container">
+                        <div class="performance-chart">
+                            <div class="chart-title">Student Performance Improvement</div>
+                            <div class="chart-bars">
+                                <div class="bar-group">
+                                    <div class="bar before" data-height="45">
+                                        <span class="bar-value">45%</span>
+                                    </div>
+                                    <div class="bar-label">Before</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar after" data-height="85">
+                                        <span class="bar-value">85%</span>
+                                    </div>
+                                    <div class="bar-label">After</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Built for Students, By Students</h2>
+                    <p>
+                        Smart Study Planner was created to address the real challenges students face in managing 
+                        their academic workload. Our team understands the struggle of juggling multiple assignments, 
+                        deadlines, and study sessions while maintaining a healthy lifestyle.
+                    </p>
+                    <div class="tech-stack">
+                        <h3>Built with Modern Technology</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Local Storage</span>
+                            <span class="tech-item">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-highlight-card">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Fully Responsive</h3>
+                        <p>Works perfectly on desktop, tablet, and mobile devices</p>
+                    </div>
+                    <div class="feature-highlight-card">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Beautiful Animations</h3>
+                        <p>Smooth CSS animations enhance user experience</p>
+                    </div>
+                    <div class="feature-highlight-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Data Privacy</h3>
+                        <p>Your information stays secure with local storage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Study Life?</h2>
+                <p>Join thousands of students who have already improved their academic performance</p>
+                <a href="dashboard.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-arrow-right"></i>
+                    Access Smart Study Dashboard
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Smart Study Planner</span>
+                    </div>
+                    <p>Empowering students to achieve their academic goals through smart planning and organization.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="#benefits">Benefits</a>
+                        <a href="#about">About</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Smart Study Planner. All rights reserved. Built with ❤️ for students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>
+```
